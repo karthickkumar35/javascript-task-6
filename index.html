@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TASK-6</title>
+	<style>
+		h3{
+			background-color:#000;
+			color:white;
+			padding:5px;
+		}
+	</style>
+</head>
+<body>
+	<h3>char to int</h3>
+	<script>
+	var alt=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+	var altvar=["a","f","g","h","l","k"];
+	var altc =[];
+	for (i=0;i<altvar.length;i++){
+		for(j=0;j<alt.length;j++){
+			if(alt[j]==altvar[i]){
+				altc[i]=j+1;
+			}
+		}
+	}
+	document.write(altc);
+	</script>
+	<h3>two digit num</h3>
+	<script>
+	var twonum=[2,8,5,9,14,66,3,22,1];
+	twonum.sort();
+	for(i=0;i<twonum.length;i++){
+	if(10<=twonum[i] && 99>=twonum[i]){
+		document.write(twonum[i],",");
+	}
+	}
+	</script>
+	<h3>multiple of 11</h3>
+	<script>
+		let array=[11,12,21,22,23,33,34,40,44];
+		let b=-1;
+		let c=[];
+		for(i=0;i<array.length;i++){
+			if(array[i]%11==0){
+			c[++b]=array[i];
+			}
+		}
+		document.write(c);
+	</script>
+	<h3>sort method</h3>
+	<script>
+		let met=[0,1,2,3,10,20,30];
+		met.sort();
+		document.write(met);
+	</script>
+	<h3>string only print</h3>
+   	<script>
+		let arr=[5,10,"ram",20,"bala",40,"anand"];
+		let a="siva";
+		let x=0;
+		let y=[];
+		for(i=0;i<arr.length;i++){
+			if(typeof(a)==typeof(arr[i])){
+			y[x++]=arr[i];
+			}
+		}
+		document.write(y);
+	</script>
+	<h3>name age</h3>
+	<script>
+		let name = prompt("enter your name");
+		let age = parseInt(prompt("enter your age"));
+		let sex = prompt("enter your sex");
+		let male="male"
+		let female="female"
+		if(sex==female){
+			document.write(name + " you are work urban area");
+		}
+		else if(sex==male){
+			if(age>=20 && 40>=age){
+				document.write(name + " you are work other area");
+			}
+			else if(age>40 && 60>=age){
+				document.write(name + " you are work urban area");
+			}
+			else{
+			document.write("ERROR");
+		}
+		}
+		else{
+			document.write("ERROR");
+		}
+	</script>
+</body>
+</html>	
